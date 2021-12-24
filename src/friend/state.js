@@ -1,10 +1,11 @@
+import createReducer from "../common/createReducer";
 import CreateItemsLogic from "../common/createItemsLogic";
+
 const { add, remove, edit, reducer } = CreateItemsLogic("friends");
 
 export const addFriend = add;
 export const removeFriend = remove;
 export const editFriend = edit;
-export default reducer;
 
 // const ADD = "friend/ADD";
 // const REMOVE = "friend/REMOVE";
@@ -32,3 +33,4 @@ export default reducer;
 //   },
 // });
 //
+export default reducer;
